@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: rgba(191,160,130);
+}
+
+.navbar{
+    display: flex;
+    margin: 10px 30px;
+    justify-content: space-between;
+    /* background-color: orange; */
+}
+
+.navbar h1{
+    font-family: 'Rubik Vinyl', cursive;
+    line-height: 80px;
+}
+
+.boxlogo{
+    display: flex;
+}
+
+.logo{
+    width: 55px;
+    border-radius: 15px;
+}
+
+.hamburger{
+    background: none;
+    border: none;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    line-height: 80px;
+}
+
+#check{
+    display: none;
+}
+
+
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.navbar ul li a:hover{
+    -webkit-text-stroke: 0.1px black;
+    color: greenyellow;
+}
+
+#headerimg{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.wrapper{
+    text-align: center;
+    /* margin: 10px 20px; */
+}
+
+.openingtext{
+    margin: 0 10px;
+}
+
+.sqrbox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.imgteddybox{
+    background: none;
+    width: 100px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.box{
+    max-width: 300px;
+    height: 150px;
+    margin: 10px 5px;
+    border-radius: 25px;
+    border: 5px solid greenyellow;
+}
+
+.alltour{
+    font-size: 30px;
+    padding: 10px 30px;
+    margin: 0 20px;
+    border-radius: 25px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.shortparap{
+    width: 60%;
+    margin: 50px auto;
+}
+
+footer{
+    /* border: 5px solid orange; */
+    background-color: greenyellow;
+}
+
+.contentfooter{
+    /* border: 5px solid red; */
+    max-width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+footer h4{
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+footer i{
+    font-family: 'Source Sans Pro', sans-serif;
+    word-wrap: break-word;
+}
+
+.info{
+    /* display: inline; */
+    word-wrap: break-word;
+    font-size: clamp(0.5rem, 2.5vw, 0.9rem); 
+    max-width: 100px;
+    /* border: 5px solid red; */
+    margin: 0 20px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px){
+    .navbar ul li{
+        margin: 0 20px;
+    }
+}
+
+
+/* 745px */
+@media (max-width: 845px){
+    .navbar h1{
+        font-size: 25px;
+    }
+
+    .navbar ul{
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 150px;
+        background: rgba(173, 255, 47, 0.5);
+        padding: 10px;
+        border: 5px solid rgb(147, 119, 91);
+        border-radius: 20px;
+        text-align: center;
+        max-height:380px;
+        margin: 0 20px;
+        display: none;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar ul li a:hover{
+        padding: 10px 25px;
+        background-color: greenyellow;
+        border: 5px solid red;
+        border-radius: 50px;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+        display: block;
+    }
+}
+
+@media (max-width: 415px){
+    .box{
+        width: 300px;
+    }
+
+    .openingtext{
+        font-size: smaller;
+    }
+}
+
+@media (min-width: 750px){
+    .info{
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 1000px){
+    .navbar ul li a{
+        font-size: smaller;
+    }
+}
