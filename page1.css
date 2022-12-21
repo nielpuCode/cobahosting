@@ -77,10 +77,19 @@ body{
 }
 
 .sqrbox{
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     width: 70%;
+    max-height: 600px;
+    border-radius: 25px;
     margin: 50px auto;
+}
+
+@media (max-width: 985px){
+    .sqrbox{
+        border-bottom: 5px solid greenyellow;
+    }
 }
 
 .imgteddybox{
